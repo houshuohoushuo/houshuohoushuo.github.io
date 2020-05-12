@@ -1,27 +1,73 @@
 <div class="container"
-    fxLayout="row"
+fxLayout="row"
+fxLayout.xs="column"
+fxLayoutAlign="center"
     fxLayoutGap="10px">
 
-    <mat-card fxFlex>
+    <mat-card fxFlex='230px' fxFlex.xs='auto'>
         <mat-card-header>
-            <mat-card-title>Shuo Hou</mat-card-title>
+            <mat-card-title>PROFESSIONAL DETAILS</mat-card-title>
         </mat-card-header>
         <img mat-card-image src="/assets/imgs/profile.jpg" alt="Shuo Hou">
         <mat-card-content>
-            <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-            bred for hunting.
-            </p>
+            <mat-grid-list cols="2" rowHeight="40">
+                <mat-grid-tile><b fxFlex fxLayoutAlign="start center">Name</b></mat-grid-tile>
+                <mat-grid-tile><p fxFlex fxLayoutAlign="start center">Shuo Hou</p></mat-grid-tile>
+                <mat-grid-tile><b fxFlex fxLayoutAlign="start center">Location</b></mat-grid-tile>
+                <mat-grid-tile><p fxFlex fxLayoutAlign="start center">Toronto, ON</p></mat-grid-tile>                
+                <mat-grid-tile><b fxFlex fxLayoutAlign="start center">Degree</b></mat-grid-tile>
+                <mat-grid-tile><p fxFlex fxLayoutAlign="start center">Master of Engineering</p></mat-grid-tile>
+                <mat-grid-tile><b fxFlex fxLayoutAlign="start center">Phone</b></mat-grid-tile>
+                <mat-grid-tile><p fxFlex fxLayoutAlign="start center">(647) 678-2688</p></mat-grid-tile>
+              </mat-grid-list>
+              <hr>
+              <mat-card-header>
+                <mat-card-title>ATTACHMENTS</mat-card-title>
+            </mat-card-header>
+            <p>resume here</p>
+            <hr>
+            <mat-card-header>
+              <mat-card-title>SOCIAL PROFILES</mat-card-title>
+          </mat-card-header>
+          <hr>
+          <mat-card-header>
+            <mat-card-title>CONTACT ME</mat-card-title>
+        </mat-card-header>
+          <form role="form" id="contact_form" class="contact-form" method="post" onsubmit="return false">
+            <ul class="row">
+              <li class="col-sm-12">
+                <label>
+                  <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                </label>
+              </li>
+              <li class="col-sm-12">
+                <label>
+                  <input type="text" class="form-control" name="company" id="company" placeholder="Subject">
+                </label>
+              </li>
+              <li class="col-sm-12">
+                <label>
+                  <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message"></textarea>
+                </label>
+              </li>
+              <li class="col-sm-12">
+                <button type="submit" value="submit" id="btn_submit" onclick="proceed();">Send Message</button>
+              </li>
+            </ul>
+          </form>
         </mat-card-content>
     </mat-card >
-    <mat-card fxFlex>
+    <mat-card fxFlex='400px' fxFlex.xs='auto'>
         <div>
             <h3>About Me</h3>
             <hr>
             <h3>I'm Web Designer</h3>
             <hr>
-            <p>descript here</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. <br>
+                <br>
+                Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. <br>
+                <br>
+              </p>
         </div>
     </mat-card >
 </div>
