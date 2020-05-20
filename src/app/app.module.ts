@@ -22,6 +22,8 @@ import { AboutComponent } from './about/about.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { EmailService } from './email.service';
+import { ProjectsComponent } from './projects/projects.component';
+import { LifeComponent } from './life/life.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { EmailService } from './email.service';
     HeaderComponent,
     AboutComponent,
     EducationComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectsComponent,
+    LifeComponent
   ],
   imports: [
     BrowserModule,
