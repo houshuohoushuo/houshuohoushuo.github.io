@@ -21,6 +21,8 @@ import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
+import { EmailService } from './email.service';
+
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { SkillsComponent } from './skills/skills.component';
     MatSlideToggleModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    EmailService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

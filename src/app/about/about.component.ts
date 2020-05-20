@@ -1,6 +1,12 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { EmailService } from '../email.service';
 
+class Feedback {
+  email: string;
+  subject: string;
+  message: string;
+};
 
 @Component({
   selector: 'app-about',
@@ -9,9 +15,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private fb: FormBuilder) {    
+  constructor(private fb: FormBuilder,private emailService: EmailService) {    
     this.createForm();
   }
+  feedback: Feedback;
   feedbackForm: FormGroup;
   @ViewChild('fform') feedbackFormDirective;
 
@@ -66,6 +73,13 @@ export class AboutComponent implements OnInit {
   }
 
   onSubmit(){
-
+    this.feedback = this.feedbackForm.value;
+    this.emailService.sendEmail(this.feedback);
+    this.feedbackForm.reset({
+      email: '',
+      subject: '',
+      message: ''
+    });
+    this.feedbackFormDirective.resetForm();
   }
 }
