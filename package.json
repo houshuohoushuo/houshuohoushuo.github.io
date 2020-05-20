@@ -22,6 +22,7 @@
     "@angular/platform-browser": "~9.1.6",
     "@angular/platform-browser-dynamic": "~9.1.6",
     "@angular/router": "~9.1.6",
+    "@zeit/ng-deploy": "^0.3.0",
     "hammerjs": "^2.0.8",
     "lite-server": "^2.5.4",
     "rxjs": "~6.5.4",
