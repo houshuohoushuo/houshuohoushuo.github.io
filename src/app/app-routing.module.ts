@@ -9,6 +9,7 @@ const routes: Routes = [
 { path: 'education',  component: EducationComponent},
 { path: 'skills',     component: SkillsComponent},
 { path: '', redirectTo: '/about', pathMatch: 'full' },
+{ path: 'shuo-website', redirectTo: '/about', pathMatch: 'full' },
 { path: 'about',  component: AboutComponent },
 { path: 'projects', component:ProjectsComponent},
 { path: 'life', component:LifeComponent}
