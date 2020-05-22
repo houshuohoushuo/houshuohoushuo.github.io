@@ -16,6 +16,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -55,7 +56,8 @@ import { LifeComponent } from './life/life.component';
     MatSlideToggleModule,
     ReactiveFormsModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    MatListModule
   ],
   providers: [
     EmailService
