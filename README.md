@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development Branch
 
-Sorce code is in "dev" branch. Used for development.
+Source code is in "dev" branch. Used for development.
 
 ## Master Branch
 
