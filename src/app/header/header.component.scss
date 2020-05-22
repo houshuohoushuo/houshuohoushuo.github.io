@@ -10,4 +10,9 @@ $background-moredark: #4527A0;
 }
 .active {
     background: $background-moredark;
+    color:white;
+}
+
+.mat-sidenav-container{
+  min-height: 93vh !important;
 }
