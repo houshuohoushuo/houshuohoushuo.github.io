@@ -1,0 +1,2 @@
+ng build --prod
+sudo ngh -b master -d dist/shuo-website
